@@ -1,0 +1,38 @@
+[project]
+name = "irl-quests"
+version = "1.2"
+description = "Геймификация повседневной жизни: квесты, привычки, уровни, достижения и награды"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flet==1.0.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flet[all]==1.0.5",
+    "pytest>=8.0",
+    "pillow>=10.0",
+    "fonttools>=4.0",
+]
+
+[tool.flet]
+org = "dev.irlquests"
+product = "IRL Quests"
+company = "IRL Quests"
+copyright = "Copyright (c) 2026 IRL Quests"
+icon_background = "#080C16"
+build_number = 2
+
+[tool.flet.app]
+path = "src"
+module = "main"
+
+[tool.flet.splash]
+color = "#080C16"
+dark_color = "#080C16"
+icon_background = "#080C16"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

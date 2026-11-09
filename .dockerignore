@@ -1,0 +1,12 @@
+.venv/
+build/
+dist/
+release/
+assets_backup/
+tests/
+tools/
+.git/
+__pycache__/
+*.pyc
+*.apk
+*.exe

@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: irl-quests-web:1.2
+    container_name: irl-quests-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped

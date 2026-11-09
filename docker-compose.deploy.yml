@@ -1,0 +1,11 @@
+# Запуск готового образа без исходников и без сборки.
+# На машине с Docker:
+#   docker load -i irl-quests-web.tar
+#   docker compose -f docker-compose.deploy.yml up -d
+services:
+  web:
+    image: irl-quests-web:1.2
+    container_name: irl-quests-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+release/
+*.log
+
+# Локальные данные приложения
+.irl_quests/
+save.json
+save.bak.json
+save.broken.json
+
+# Локальная инженерная документация (не публикуется)
+PROJECT.md
